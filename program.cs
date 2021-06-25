@@ -20,14 +20,14 @@ namespace MachineLearning
         public static void Main()
         {
             //These are the only 3 inputs we will need when converting this to a class to be used throughout code
-            string imageLocation = "https://resumecompanion.com/wp-content/uploads/2016/12/Entry-Level-Resume-Template-Aquatic-Blue.png";
-            var endpoint = "https://readingcontracts.cognitiveservices.azure.com/";
-            var subscriptionKey = "c8b79f70682b4891806adfd0c05ffa19";
+            string imageLocation = "INPUT YOUR IMAGE ADDRESS. Can be local file or url";
+            var endpoint = "INPUT YOUR Azure Computer Vision endpoint";
+            var subscriptionKey = "INPUT YOUR Azure Computer Vision subscriptionKey";
 
             //keys and urls set to variables for better readability
-            var predictionKey = "3e42f4f3fa8d4834b9a90f9a6389e745";
-            var ObjectDeterctorURL = "https://customvisionvideo.cognitiveservices.azure.com/customvision/v3.0/Prediction/df089820-db3c-434a-b396-3e87efcb1969/detect/iterations/Iteration2/image";
-            var ClassificationURL = "https://customvisionvideo.cognitiveservices.azure.com/customvision/v3.0/Prediction/1b47f747-ef32-4337-b1a8-4150f9b8d16d/classify/iterations/Iteration1/image";
+            var predictionKey = "INPUT YOUR Azure Custom Vision predictionKey";
+            var ObjectDeterctorURL = "INPUT YOUR Azure Custom Vision predictionURL from Object Detector Model";
+            var ClassificationURL = "INPUT YOUR Azure Custom Vision predictionURL from Image Classification Model";
 
             //Creates the ComputerVisionClient which is OCR powered by Azure.
             ComputerVisionClient client = Authenticate(endpoint, subscriptionKey);
